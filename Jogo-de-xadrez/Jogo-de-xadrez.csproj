@@ -6,4 +6,8 @@
     <RootNamespace>Jogo_de_xadrez</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
 </Project>
