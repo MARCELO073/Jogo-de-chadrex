@@ -1,5 +1,6 @@
 ﻿using System;
-using Jogo_de_xadrez.Tabuleiro;
+
+
 namespace Jogo_de_xadrez
 {
     class Program
@@ -9,6 +10,7 @@ namespace Jogo_de_xadrez
             Posicao P;
             P = new Posicao(3, 4);
             Console.WriteLine("Posicao: " + P);
+            Tabuleiro tab = new Tabuleiro(8,8);
 
             Console.ReadKey();
         }

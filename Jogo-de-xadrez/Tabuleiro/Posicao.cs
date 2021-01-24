@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jogo_de_xadrez.Tabuleiro
+namespace Jogo_de_xadrez
 {
     class Posicao
     {
