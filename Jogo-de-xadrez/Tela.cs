@@ -14,7 +14,7 @@ namespace Jogo_de_xadrez
                 {
                     if (tab.peca(i, j) == null)
                     {
-                        Console.WriteLine("- ");
+                        Console.Write("- ");
                     }
                     else
                     {

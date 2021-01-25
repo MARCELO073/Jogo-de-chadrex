@@ -17,10 +17,15 @@ namespace Jogo_de_xadrez
             pecas = new Peca[linhas, colunas];
         } 
 
-        public Peca peca(int linhas,int colunas)
+        public Peca peca(int linha,int coluna)
         {
-            return pecas[linhas, colunas];
+            return pecas[linha, coluna];
         } 
+        public void colocarPeca(Peca p, Posicao pos)
+        {
+            pecas[pos.linha, pos.coluna] = p;
+            p.posicao = pos;
+        }
 
 
 
