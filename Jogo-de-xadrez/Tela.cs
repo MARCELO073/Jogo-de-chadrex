@@ -18,7 +18,7 @@ namespace Jogo_de_xadrez
                     }
                     else
                     {
-                        Console.WriteLine(tab.peca(i,j)+ " ");
+                        Console.Write(tab.peca(i,j)+ " ");
                     }
                 }
 
