@@ -17,5 +17,9 @@ namespace Jogo_de_xadrez
             this.qteMovimentos = 0;
             this.tab = tab;
         }
+        public void incrementarQteMovimento()
+        {
+            qteMovimentos++;
+        }
     }
 }
