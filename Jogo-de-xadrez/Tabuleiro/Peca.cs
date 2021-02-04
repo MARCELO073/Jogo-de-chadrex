@@ -3,7 +3,7 @@
 
 namespace Jogo_de_xadrez
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao posicao { get;  set; }
         public Cor cor { get; protected set; }
@@ -21,5 +21,6 @@ namespace Jogo_de_xadrez
         {
             qteMovimentos++;
         }
+        public abstract bool[,] movimentosPossiveis();
     }
 }
