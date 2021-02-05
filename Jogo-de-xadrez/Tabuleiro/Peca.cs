@@ -31,7 +31,7 @@ namespace Jogo_de_xadrez
                     if (mat[i, j])
                     {
                         return true;
-
+                         
                     }
                 }
             }

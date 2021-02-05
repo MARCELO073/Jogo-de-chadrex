@@ -11,16 +11,18 @@ namespace Jogo_de_xadrez
             try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
-                PartidaDeXadrez partida = new PartidaDeXadrez(); 
-                 
+                PartidaDeXadrez partida = new PartidaDeXadrez();
+
                 while (!partida.terminada)
                 {
+                    try
                     {
                         Console.Clear();
                         Tela.imprimirTabuleiro(partida.tab);
                         Console.WriteLine();
                         Console.WriteLine("Turno: " + partida.turno);
                         Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -39,11 +41,16 @@ namespace Jogo_de_xadrez
 
                         partida.realizaJogada(origem, destino);
                     }
+                    catch (TabuleiroException e)
+                    {
+                        Console.WriteLine(e.Message);
+                        Console.ReadLine();
+                    }
                 }
 
-                
-            } 
-             catch(TabuleiroException e)
+
+            }
+            catch (TabuleiroException e)
             {
                 Console.WriteLine(e.Message);
             }
