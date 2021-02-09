@@ -9,8 +9,7 @@ namespace Jogo_de_xadrez
         {
 
             try
-            {
-                Tabuleiro tab = new Tabuleiro(8, 8);
+            {  
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
                 while (!partida.terminada)
@@ -18,12 +17,12 @@ namespace Jogo_de_xadrez
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
                         Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Console.WriteLine();
+                        Console.WriteLine();
                         Tela.imprimirPartida(partida);
 
+          
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
